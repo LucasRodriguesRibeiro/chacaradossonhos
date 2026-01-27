@@ -21,17 +21,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50 selection:bg-emerald-200 font-sans">
       {/* Sticky Header with Glassmorphism */}
-      <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-lg z-50 border-b border-emerald-100/50 shadow-sm transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-3 group cursor-pointer">
-            <div className="p-2 bg-emerald-100 rounded-full group-hover:bg-emerald-200 transition-colors">
-              <TreePine className="text-emerald-700 w-6 h-6" />
-            </div>
-            <span className="font-playfair font-bold text-emerald-950 text-xl md:text-2xl tracking-tight">Chácara dos Sonhos</span>
-          </div>
-          <WhatsAppButton variant="secondary" label="Chamar no WhatsApp" className="hidden sm:flex border-emerald-600 text-emerald-700 hover:bg-emerald-50" />
-        </div>
-      </nav>
+
 
       {/* 🔹 SEÇÃO 1 – HERO (IMPACTO INICIAL) */}
       <header className="relative pt-24 pb-20 lg:pt-48 lg:pb-48 min-h-[90vh] flex items-center overflow-hidden">
@@ -46,12 +36,12 @@ const App: React.FC = () => {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-          <div className="max-w-4xl space-y-8 animate-fade-in-up">
+          <div className="max-w-4xl space-y-8 animate-fade-in-up text-center sm:text-left mx-auto sm:mx-0">
             <div className="space-y-6">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/20 backdrop-blur-md border border-emerald-400/30 text-emerald-50 text-sm font-bold uppercase tracking-widest shadow-2xl">
                 <MapPin size={14} /> Oportunidade em Barreiras – BA
               </span>
-              <h1 className="text-3xl md:text-6xl lg:text-7xl font-black text-white leading-tight drop-shadow-2xl">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight drop-shadow-2xl">
                 ✨ A chácara que une <span className="text-emerald-300 italic font-serif">natureza</span>, conforto e tranquilidade
               </h1>
               <p className="text-lg md:text-2xl text-emerald-50/90 leading-relaxed max-w-2xl font-light drop-shadow-lg">
@@ -96,7 +86,7 @@ const App: React.FC = () => {
                 </div>
                 <div className="p-6 bg-emerald-50 rounded-2xl border border-emerald-100">
                   <div className="font-playfair text-4xl font-bold text-emerald-800 mb-1">24km</div>
-                  <div className="text-sm font-bold text-emerald-600 uppercase tracking-wider">Da Cidade</div>
+                  <div className="text-sm font-bold text-emerald-600 uppercase tracking-wider">De Barreiras</div>
                 </div>
               </div>
             </div>
@@ -117,7 +107,7 @@ const App: React.FC = () => {
               </div>
               <p className="text-sm font-bold text-emerald-900 leading-tight">
                 Assista ao vídeo <br />
-                <span className="text-xs font-normal text-emerald-600">Mostrando o acesso à chácara</span>
+                <span className="text-xs font-normal text-emerald-600">Mostrando o acesso ao Rio de Ondas</span>
               </p>
             </div>
           </div>
