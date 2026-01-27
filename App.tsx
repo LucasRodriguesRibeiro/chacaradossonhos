@@ -61,7 +61,10 @@ const App: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <WhatsAppButton className="w-full sm:w-auto text-xl py-5 px-10 shadow-emerald-900/50 shadow-xl hover:-translate-y-1 transition-transform" label="👉 Quero conhecer agora" />
-              <button className="px-8 py-5 bg-white/10 backdrop-blur-sm border border-white/30 rounded-full text-white font-bold hover:bg-white/20 transition-all">
+              <button
+                onClick={() => document.getElementById('galeria')?.scrollIntoView({ behavior: 'smooth' })}
+                className="px-8 py-5 bg-white/10 backdrop-blur-sm border border-white/30 rounded-full text-white font-bold hover:bg-white/20 transition-all"
+              >
                 Ver galeria de fotos
               </button>
             </div>
@@ -100,10 +103,13 @@ const App: React.FC = () => {
           </div>
           <div className="relative order-1 lg:order-2 group">
             <div className="absolute inset-0 bg-emerald-600 rounded-[2.5rem] rotate-3 opacity-20 group-hover:rotate-6 transition-transform duration-500" />
-            <img
-              src={IMAGES.terreno}
-              alt="Vista do terreno / área externa com árvores e caminho interno"
+            <video
+              src="/videos/escada.mp4"
               className="relative rounded-[2.5rem] shadow-2xl w-full aspect-[4/3] object-cover transform group-hover:-translate-y-2 transition-transform duration-500"
+              autoPlay
+              muted
+              loop
+              playsInline
             />
           </div>
         </div>
@@ -481,7 +487,8 @@ const App: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-emerald-400 font-bold mb-1">PARCELAMENTO</p>
-                  <p className="text-3xl font-bold text-white">15x SEM JUROS</p>
+                  <p className="text-3xl font-bold text-white">15x R$ 10.000,00</p>
+                  <p className="text-emerald-200 font-bold text-sm tracking-wide mt-1">FIXAS E SEM JUROS</p>
                 </div>
               </div>
             </div>
@@ -501,7 +508,7 @@ const App: React.FC = () => {
         <div className="flex flex-col items-center gap-4">
           <TreePine className="w-8 h-8 text-emerald-600 mb-2" />
           <p>© 2026 Chácara dos Sonhos - Barreiras/BA</p>
-          <p className="text-sm">Vendas Exclusivas. Imagens ilustrativas.</p>
+
         </div>
       </footer>
 

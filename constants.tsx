@@ -2,8 +2,8 @@
 import React from 'react';
 import { Fruit } from './types';
 
-export const WHATSAPP_NUMBER = "5577999999999";
-export const WHATSAPP_MESSAGE = "Olá! Vi a Chácara dos Sonhos em Barreiras e gostaria de saber mais informações.";
+export const WHATSAPP_NUMBER = "5577998535364";
+export const WHATSAPP_MESSAGE = "Olá, vim pelo site e gostaria de mais informações sobre a Chácara!";
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
 // Helper to auto-generate the gallery list
