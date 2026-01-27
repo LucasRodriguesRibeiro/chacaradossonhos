@@ -111,6 +111,15 @@ const App: React.FC = () => {
               loop
               playsInline
             />
+            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl border-l-4 border-emerald-500 flex items-center gap-3 max-w-[200px] md:max-w-none">
+              <div className="bg-emerald-100 p-2 rounded-full">
+                <Play className="text-emerald-600 fill-emerald-600 w-4 h-4" />
+              </div>
+              <p className="text-sm font-bold text-emerald-900 leading-tight">
+                Assista ao vídeo <br />
+                <span className="text-xs font-normal text-emerald-600">Mostrando o acesso à chácara</span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
